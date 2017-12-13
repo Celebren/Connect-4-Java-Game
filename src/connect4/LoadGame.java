@@ -26,7 +26,7 @@ public class LoadGame {
 	public void readFile() {
 		try { // buffered writer must be in an try-catch exception
 			// instantiate new BufferedReader that reads from the savedGame.txt file
-			BufferedReader loadGameBufferedReader = new BufferedReader(new FileReader("savedGame.txt"));
+			BufferedReader loadGameBufferedReader = new BufferedReader(new FileReader("javaConnect4SavedGame.txt"));
 			
 			// add to the variables the value of each line read
 			this.redPlayerName = loadGameBufferedReader.readLine();

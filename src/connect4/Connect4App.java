@@ -243,8 +243,14 @@ public class Connect4App extends Application{
 		
 		// assign those values to the program's variables
 		redPlayerName = newLoad.getRedPlayerName();
+		if (redPlayerName.isEmpty()) {
+			redPlayerName = "Red";
+		}
 		//System.out.println("Loaded red name is " + redPlayerName);
 		yellowPlayerName = newLoad.getYellowPlayerName();
+		if (yellowPlayerName.isEmpty()) {
+			yellowPlayerName = "Yellow";
+		}
 		//System.out.println("Loaded yellow name is " + yellowPlayerName);
 		redsTurn = newLoad.getRedsTurn();
 		//System.out.println("redsTurn is " + newLoad.getRedsTurn());

@@ -37,7 +37,7 @@ public class SaveGame {
 		
 		try { // buffered writer must be in an try-catch exception
 			// instantiate a new BufferedWriter that creates and writes on the "savedGame.txt" file
-			BufferedWriter saveGameBufferedWriter = new BufferedWriter(new FileWriter("savedGame.txt"));
+			BufferedWriter saveGameBufferedWriter = new BufferedWriter(new FileWriter("javaConnect4SavedGame.txt"));
 			// write into the file
 			saveGameBufferedWriter.write(this.redPlayerName);
 			saveGameBufferedWriter.newLine();
