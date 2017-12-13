@@ -33,7 +33,6 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 import javafx.util.Pair;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -47,9 +46,9 @@ public class Connect4App extends Application{
 	private final String RED_PIECE = "/images/redGamePiece.png";
 	private final String YELLOW_PIECE = "/images/yellowGamePiece.png";
 	private final String GAME_PIC = "/images/connect4pic.png";
-	private final String CHEER = "cheer.mp3";
-	private final String TOKEN_FALL = "tokenFall.mp3";
-	private final String DRAW = "draw.mp3";
+	private final String CHEER = "/sound/cheer.mp3";
+	private final String TOKEN_FALL = "/sound/tokenFall.mp3";
+	private final String DRAW = "/sound/draw.mp3";
 	
 	// end state strings
 	private String dialogTitle;
@@ -809,7 +808,7 @@ public class Connect4App extends Application{
 
 	// method for playing sound effects
 	private void playSoundEffect(String soundEffect) {
-		Media sound = new Media(new File(soundEffect).toURI().toString());
+		Media sound = new Media(this.getClass().getResource(soundEffect).toString());
 		MediaPlayer mediaPlayer = new MediaPlayer(sound);
 		mediaPlayer.play();
 	} // end of playSoundEffect()
