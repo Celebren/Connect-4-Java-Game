@@ -14,12 +14,10 @@ Menu Items:
  - Help/About: Info about the application
 
 ### To run
-Import and run from any java IDE. 
+Run Connect_4_win.jar or Connect_4_Ubuntu.jar or import and run from any java IDE. 
 
 ### Bugs
-* When building into standalone executable performance during gameplay is severely slow
 * In Ubuntu, the menu bar disappears as soon as the user releases the mouse button. Only way to navigate menu bars in linux is by using the Alt and arrow keys and enter key to select an item.
 
 ### To do
-- Move sound files to the src folder
-- Make Jar file
+* Fix menu bar
